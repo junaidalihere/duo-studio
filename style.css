@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#cursar {
+    width: 20px;
+    height: 20px;
+    background-color: #EDBFFF;
+    border-radius: 50%;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 999;
+   
+}
+
+#main {
+    background-color: black;
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page1 .navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8vw 2.8vw;
+}
+
+.page1 .navbar img {
+    height: 2.5vw;
+}
+
+.page1 .navbar .nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.page1 .navbar .nav-part2 h4 {
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.page1 .navbar .nav-part2 h4:nth-child(1) {
+
+    border-bottom: 1px solid white;
+}
+
+.page1 .navbar .circule {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    font-weight: 400;
+}
+
+.page1 h1 {
+    font-size: 8vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    font-weight: 400;
+}
+
+.page1 h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 8vw;
+    margin-left: 20vw;
+    font-weight: 400;
+}
+
+.page1 video {
+    margin-top: 10vw;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    border-bottom: 1px solid black;
+
+}
+
+.page2 h1 {
+    font-size: 6vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 6vw;
+    margin-top: 10vw;
+    font-weight: 400;
+    color: black;
+}
+
+.page2 .page2-center {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page2 .page2-center .left {
+    width: 27%;
+    margin-left: 6vw;
+    margin-top: 7vw;
+
+}
+
+.page2 .page2-center .left h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.4vw;
+    /* margin-top: 10vw;  */
+    color: black;
+}
+
+.page2 .page2-center .right {
+    width: 20%;
+    margin-right: 4vw;
+    margin-top: 3vw;
+
+}
+
+.page2 .page2-center .right p {
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.page2 .page2-center .right button {
+    width: 100%;
+    padding: 1vw 1vw;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    background-color: #EDBFFF;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+.page2 .page2-center .right button:hover {
+    background-color: black;
+    color: white;
+}
+
+.page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.page3 h1 {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 7vw;
+    font-weight: 400;
+    padding: 3vw;
+    margin-left: 6vw;
+}
+
+.page3 .page3-center {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page3 .page3-center img:nth-child(1) {
+    width: 50vw;
+    padding-top: 8vw;
+}
+
+.page3 .page3-center img:nth-child(2) {
+    width: 35vw;
+
+}
+
+.page4 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.box img {
+    width: 20%;
+    position: absolute;
+    opacity: 0;
+}
+
+.box img:nth-child(1) {
+    left: 10%;
+}
+
+.box img:nth-child(3) {
+    right: 10%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box:hover img {
+    opacity: 1;
+}
+
+.box .text {
+    height: 9vw;
+    overflow: hidden;
+}
+
+.box h1 {
+    font-size: 7vw;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.box:hover h1 {
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+.page5{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 3vw;
+}
+.page5 h1{
+    font-size: 4vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 9vw;
+    /* padding-left: 5vw; */
+    color: #EDBFFF;
+    font-weight: 400;
+    padding-bottom: 2vw;
+}
+
+
+.page5 .elem-box{
+    /* width: 100%; */
+    position: relative;
+    z-index: 8;
+}
+
+.page5 .elem-box .bos{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 222, 222);
+    position: relative;
+    z-index: 8;
+   
+}
+
+.page5 .elem-box .bos h2{
+    font-size: 3vw;
+}
+
+.page6{
+    width: 100%;
+    height: 100vh;
+    background-color: #EDBFFF;
+    padding: 0 3vw;
+}
+.page6 .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10vw;
+    border-bottom: 2px solid rgb(40, 40, 38);
+    padding-bottom: 3vw;
+}
+
+.page6 .top h1{
+ font-size: 3vw;
+ color: black;
+}
+
+.page6 .top .gol{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.page6 .bottom{
+    
+}
+
+.page6 .bottom{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 3vw;
+}
+
+.page6 .bottom .left h1{
+color: black;
+}
+
+.in-d{
+    padding-top: 3vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom: 2px solid black;
+}
+.in-d input{
+width: 30vw;
+padding: 1.4vw 5vw;
+text-align: left;
+color: black;
+border: none;
+outline: none;
+background-color: transparent;
+font-size: 1.4vw;
+}
+
+.in-d button{
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
